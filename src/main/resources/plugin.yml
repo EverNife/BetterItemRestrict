@@ -1,6 +1,6 @@
 name: BetterItemRestrict
 main: br.com.finalcraft.betteritemrestrict.BetterItemRestrict
-version: 1.0.2a
+version: 1.0.3
 author: EverNife
 depend: [EverNifeCore]
 
