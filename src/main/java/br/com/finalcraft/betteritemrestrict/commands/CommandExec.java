@@ -25,41 +25,6 @@ public class CommandExec implements CommandExecutor {
 		this.instance = instance;
 	}
 
-	public static boolean getInvName(CommandSender sender){
-
-		if ( !(sender instanceof Player)){
-			sender.sendMessage("Apenas jogadores físicos podem usar esse comando.");
-			return true;
-		}
-
-		Player player = (Player) sender;
-
-		sender.sendMessage("§aAbra algum inventário para saber seu nome! (Você tem 3 segundos)");
-
-		new BukkitRunnable() {
-			@Override
-			public void run() {
-				InventoryView inventoryView = player.getOpenInventory();
-				if (inventoryView == null){
-					sender.sendMessage("§cVocê não possui nenhum inventário aberto no momento....");
-					return;
-				}
-
-				Inventory inventory = inventoryView.getTopInventory();
-				if (inventory == null){
-					sender.sendMessage("§cVocê não possui nenhum inventário aberto no momento....");
-					return;
-				}
-
-				sender.sendMessage("Nome do Inventário: " + inventory.getHolder().toString());
-				sender.sendMessage("Nome do Inventário: " + inventory.getHolder().getClass().getName());
-				BetterItemRestrict.instance.getLogger().info("(" + player.getName() + ") Inventory View " + inventory.getTitle());
-			}
-		}.runTaskLater(BetterItemRestrict.instance,60);
-
-		return true;
-	}
-
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		if (cmd.getName().equals("betteritemrestrict")) {
 			if (!sender.hasPermission("betteritemrestrict.manage")) {
@@ -73,9 +38,6 @@ public class CommandExec implements CommandExecutor {
 			}
 
 			switch(args[0].toLowerCase()) {
-				case "getinvname": {
-					return getInvName(sender);
-				}
 				case "reload": {
 					BetterItemRestrict.clearCheckedChunks();
 					ConfigManager.initialize(instance);
