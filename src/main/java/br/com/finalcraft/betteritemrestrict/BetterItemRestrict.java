@@ -39,7 +39,7 @@ public class BetterItemRestrict extends JavaPlugin {
 	public void onEnable() {
 		instance = this;
 
-		if (MCVersion.isHigherEquals(MCVersion.v1_8_R1)){
+		if (MCVersion.isCurrentHigherEquals(MCVersion.v1_8_R1)){
 			SOUND_ITEM_BREAK = Sound.ENTITY_ITEM_BREAK;
 		}else {
 			SOUND_ITEM_BREAK = Sound.valueOf("ITEM_BREAK");
