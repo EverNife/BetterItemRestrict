@@ -26,7 +26,7 @@ repositories {
 }
 
 dependencies {
-    compile 'br.com.finalcraft:EverNifeCore:2.0.1'
+    compile 'br.com.finalcraft:EverNifeCore:2.0.2'
     compile 'org.bukkit:bukkit:1.12.2-R0.1-SNAPSHOT'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }

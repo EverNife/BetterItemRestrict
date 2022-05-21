@@ -1,8 +1,8 @@
 package br.com.finalcraft.betteritemrestrict.events;
 
-import br.com.finalcraft.evernifecore.version.MCVersion;
 import br.com.finalcraft.betteritemrestrict.BetterItemRestrict;
 import br.com.finalcraft.betteritemrestrict.restrictdata.RestrictedItem;
+import br.com.finalcraft.evernifecore.version.MCVersion;
 import org.bukkit.Material;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.Player;
@@ -17,11 +17,7 @@ import org.bukkit.event.entity.EntityPickupItemEvent;
 import org.bukkit.event.inventory.CraftItemEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
-import org.bukkit.event.player.PlayerDropItemEvent;
-import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.player.PlayerItemHeldEvent;
-import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerPickupItemEvent;
+import org.bukkit.event.player.*;
 import org.bukkit.event.world.ChunkLoadEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;

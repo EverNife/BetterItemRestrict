@@ -1,20 +1,17 @@
 package br.com.finalcraft.betteritemrestrict.commands;
 
-import br.com.finalcraft.betteritemrestrict.config.ConfigManager;
 import br.com.finalcraft.betteritemrestrict.BetterItemRestrict;
+import br.com.finalcraft.betteritemrestrict.config.ConfigManager;
 import br.com.finalcraft.betteritemrestrict.restrictdata.RestrictedItem;
-import br.com.finalcraft.evernifecore.fcitemstack.FCItemStack;
 import br.com.finalcraft.evernifecore.util.FCBukkitUtil;
+import br.com.finalcraft.evernifecore.util.FCItemUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.Inventory;
-import org.bukkit.inventory.InventoryView;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.List;
 
@@ -68,9 +65,8 @@ public class CommandExec implements CommandExecutor {
 
 					String itemName = itemBukktiName;
 					try {
-						FCItemStack fcItemStack = new FCItemStack(itemStack);
-						itemName = fcItemStack.getItemLocalizedName();
-						itemName = fcItemStack.getItemLocalizedName();
+						itemName = FCItemUtils.getLocalizedName(itemStack);
+						itemName = FCItemUtils.getLocalizedName(itemStack);
 					}catch (Exception e){
 						sender.sendMessage("§cFalha a pegar ItemLocalizedName...");
 						e.printStackTrace();

@@ -1,8 +1,8 @@
 package br.com.finalcraft.betteritemrestrict.chunk;
 
-import java.util.UUID;
-
 import org.bukkit.Chunk;
+
+import java.util.UUID;
 
 public class ChunkIdentifier {
 	final private UUID world;

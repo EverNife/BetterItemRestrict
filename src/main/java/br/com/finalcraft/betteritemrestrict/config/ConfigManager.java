@@ -1,19 +1,18 @@
 package br.com.finalcraft.betteritemrestrict.config;
 
+import br.com.finalcraft.betteritemrestrict.restrictdata.RestrictedItem;
+import com.google.common.collect.HashMultimap;
+import com.google.common.collect.Multimap;
+import org.bukkit.Material;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.plugin.java.JavaPlugin;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.CopyOption;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
-
-import br.com.finalcraft.betteritemrestrict.restrictdata.RestrictedItem;
-import org.bukkit.Material;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.plugin.java.JavaPlugin;
-
-import com.google.common.collect.HashMultimap;
-import com.google.common.collect.Multimap;
 
 public class ConfigManager {
 	public static Multimap<Material, RestrictedItem> usage = HashMultimap.create();
