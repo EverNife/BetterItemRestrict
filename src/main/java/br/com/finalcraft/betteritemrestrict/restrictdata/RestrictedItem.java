@@ -122,6 +122,6 @@ public class RestrictedItem {
 	}
 
 	public String serialize() {
-		return material+(dv!=null ? ","+dv : "")+"|"+label+"|"+reason;
+		return material + ( dv != null ? "," + dv : "") + "|" + label + "|"+reason;
 	}
 }

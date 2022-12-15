@@ -30,7 +30,7 @@ public class EventListener implements Listener {
 	}
 
 	private ItemStack getPlayersHeldItem(HumanEntity player) {
-		return MCVersion.isBellow1_7_10() ? player.getItemInHand() : player.getInventory().getItemInMainHand();
+		return MCVersion.isLowerEquals(MCVersion.v1_7_10) ? player.getItemInHand() : player.getInventory().getItemInMainHand();
 	}
 
 	@EventHandler(priority = EventPriority.LOWEST)

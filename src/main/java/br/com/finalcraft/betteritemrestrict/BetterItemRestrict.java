@@ -6,6 +6,7 @@ import br.com.finalcraft.betteritemrestrict.commands.CommandExec;
 import br.com.finalcraft.betteritemrestrict.config.ConfigManager;
 import br.com.finalcraft.betteritemrestrict.events.EventListener;
 import br.com.finalcraft.betteritemrestrict.restrictdata.RestrictedItem;
+import br.com.finalcraft.evernifecore.version.MCDetailedVersion;
 import br.com.finalcraft.evernifecore.version.MCVersion;
 import org.bukkit.*;
 import org.bukkit.block.Block;
@@ -38,7 +39,7 @@ public class BetterItemRestrict extends JavaPlugin {
 	public void onEnable() {
 		instance = this;
 
-		if (MCVersion.isCurrentHigherEquals(MCVersion.v1_8_R1)){
+		if (MCVersion.getCurrent().isHigherEquals(MCDetailedVersion.v1_8_R1)){
 			SOUND_ITEM_BREAK = Sound.ENTITY_ITEM_BREAK;
 		}else {
 			SOUND_ITEM_BREAK = Sound.valueOf("ITEM_BREAK");
