@@ -3,6 +3,7 @@ main: br.com.finalcraft.betteritemrestrict.BetterItemRestrict
 version: 1.0.3
 author: EverNife
 depend: [EverNifeCore]
+api-version: 1.13
 
 commands:
   betteritemrestrict:
