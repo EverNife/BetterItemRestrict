@@ -4,17 +4,18 @@ Item restrictions can be bypassed with the "betteritemrestrict.bypass" permissio
 Also the /banneditems command will show a list of banned items.
 
 ### Dependency
-This plugin requires [Kai's Commons](http://github.com/KaiKikuchi/KaisCommons)
+This plugin requires EverNifeCore
 
 ### Install
 Download and copy the jar file in your plugins folder (under mods/plugins/ for Sponge servers).  
 After loading the plugin for the first time, a default config will be generated.  
 Edit your config and add the 
 
-#### Example:
-[Check this example file](https://github.com/KaiKikuchi/BetterItemRestrict/blob/master/config.example.yml)
-
 #### Permissions
 - betteritemrestrict.list = for the "/banneditems" command
 - betteritemrestrict.manage = for the "/bires" command
 - betteritemrestrict.admin = for being notified in-game when a banned item is used
+
+#### I will not be supporting on this plugin anymore
+
+I have a paid version of this one called ItemExilum that does the same thing but with more features.
