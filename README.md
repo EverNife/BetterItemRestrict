@@ -1,3 +1,8 @@
+# I will not be supporting on this plugin anymore
+
+I have a paid version of this one called ItemExilum that does the same thing but with more features.
+But this plugin still works as it from 1.7.10, 1.12.2 and 1.16.5 (probably on 1.20.2 but not tested)
+
 ## BetterItemRestrict
 An Item Restrict plugin for Bukkit and Sponge. You can restrict players from owning or using a certain item. This plugin is made for modded servers (Cauldron-like, or SpongeForge).  
 Item restrictions can be bypassed with the "betteritemrestrict.bypass" permission (for all items) and "betteritemrestrict.bypass.MATERIAL_NAME" for bypassing a specific item. On Sponge, replace any ":" on the item name with "-". If your permission plugin supports world permissions, you can allow items in certain worlds and restrict it in other worlds.   
@@ -15,7 +20,3 @@ Edit your config and add the
 - betteritemrestrict.list = for the "/banneditems" command
 - betteritemrestrict.manage = for the "/bires" command
 - betteritemrestrict.admin = for being notified in-game when a banned item is used
-
-#### I will not be supporting on this plugin anymore
-
-I have a paid version of this one called ItemExilum that does the same thing but with more features.
